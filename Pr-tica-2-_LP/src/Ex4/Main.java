@@ -27,8 +27,12 @@ public class Main {
                     System.out.println("============= CADASTRAR PASSAGEIRO =============");
                     System.out.println("Escreva o nome do Passageiro: ");
                     nome = ler.next();
-                    System.out.println(nome);
-
+                    System.out.println("Escreva o CPF do Passageiro: ");
+                    cpf = ler.next();
+                    System.out.println("Escreva o numero do voo do Passageiro: ");
+                    numVoo = ler.nextInt();
+                    System.out.println("CADASTRO REALIZADO COM SUCESSO" );
+                    break;
                 case 2:
                     System.out.println("============= CHECK IN =============");
                     System.out.println("Escreva o CPF do Passageiro: ");
