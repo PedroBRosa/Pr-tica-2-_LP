@@ -61,6 +61,7 @@ public class Main {
                     System.out.println("Escreva o numero da Poltrona : ");
                     numPoltrona = ler.nextInt();
                     poltrona[numPoltrona-1]=true;
+                    System.out.printf("Voo %d cancelado para o cpf %s\n",numVoo,cpf);
                     System.out.println("== CANCELAMENTO REALIZADO COM SUCESSO ==");
                     break;
                 case 4:
