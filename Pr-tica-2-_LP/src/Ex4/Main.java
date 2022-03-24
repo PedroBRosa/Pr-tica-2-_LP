@@ -41,8 +41,12 @@ public class Main {
                     numVoo = ler.nextInt();
                     System.out.println("Escreva o numero da Poltrona : ");
                     numPoltrona = ler.nextInt();
-                    while(poltrona[numPoltrona-1]==false){
-                        System.out.println("Poltrona já ocupada, Escolha outra ");
+                    while (numPoltrona>poltrona.length){
+                        System.out.println("Poltrona Invalida Escolha uma de 1-100");
+                        numPoltrona = ler.nextInt();
+                    }
+                    while(poltrona[numPoltrona-1]==false||numPoltrona>=poltrona.length){
+                        if(poltrona[numPoltrona-1]==false)System.out.println("Poltrona já ocupada, Escolha outra ");
                         numPoltrona = ler.nextInt();
                         if(poltrona[numPoltrona-1]==true){
                             poltrona[numPoltrona-1]=false;
@@ -60,6 +64,10 @@ public class Main {
                     numVoo = ler.nextInt();
                     System.out.println("Escreva o numero da Poltrona : ");
                     numPoltrona = ler.nextInt();
+                    while (numPoltrona>poltrona.length){
+                        System.out.println("Poltrona Invalida Escolha uma de 1-100");
+                        numPoltrona = ler.nextInt();
+                    }
                     poltrona[numPoltrona-1]=true;
                     System.out.printf("Voo %d cancelado para o cpf %s\n",numVoo,cpf);
                     System.out.println("== CANCELAMENTO REALIZADO COM SUCESSO ==");
@@ -70,7 +78,9 @@ public class Main {
                 default:
                     System.out.println("Opção Invalida!");
                     break;
+
             }
         }
     }
+
 }
